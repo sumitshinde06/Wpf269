@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Hover Effect and Colors</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffd1a6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Increase minimum size to 200px */
+            gap: 20px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #50fc16;
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+            object-fit: cover;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+            border: color #ff6347; 
+            background-color: rgb(18, 77, 214);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0e120f;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Photo Gallary</h1>
+        <div class="grid-container">
+            <!-- Images -->
+            <div class="image-container">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/975/383/small_2x/jaguar-in-nature-national-geography-wide-life-animals-ai-generated-photo.jpg" alt="Sample Image 1">
+            </div>
+            <div class="image-container">
+                <img src="https://www.worldanimalprotection.org/cdn-cgi/image/width=1920,format=auto/globalassets/images/elephants/1033551-elephant.jpg" alt="Sample Image 2">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5EL5Jmwh5BKuJvxhr8DaJH1e2skZ0sVVxaw&s" alt="Sample Image 3">
+            </div>
+            <div class="image-container">
+                <img src="https://headlines.peta.org/wp-content/uploads/2020/12/ACOM-VIV-Rabbit-Bunny-satyabrata-sm-u_kMWN-BWyU-unsplash-2-scaled.jpeg" alt="Sample Image 4">
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg" alt="Game Image 5">
+            </div>
+            <div class="image-container">
+                <img src="https://www.shutterstock.com/image-photo/dog-animal-pet-cat-cute-260nw-2521815587.jpg" alt="Game Image 6">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUH_S0m_f0On7C0ohCIZPr7tWq00oBxbqQWw&s" alt="Sample Image 7">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGaKQYijLVxRAa8LkWgRnOYGWwQvLB0eV9A&s" alt="Sample Image 8">
+            </div>
+            <div class="image-container">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/5faad4255239c9448d6c7bcd/Best-Animal-Photos-Contest--Close-Up-Of-baby-monkey/960x0.jpg?format=jpg&width=960" alt="Sample Image 9">
+            </div>
+            <div class="image-container">
+                <img src="https://www.rd.com/wp-content/uploads/2020/05/GettyImages-1064680152-scaled.jpg?fit=700%2C467" alt="Sample Image 10">
+            </div>
+            <div class="image-container">
+                <img src="https://thumbs.dreamstime.com/b/baby-rabbit-eating-grass-outdoor-sunny-summer-day-easter-bunny-garden-home-pet-kid-cute-pets-animals-family-131767995.jpg" alt="Sample Image 11">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoFVYNTcHEKSKpjtLMibrxJu3Qb9B9ygfFw&s" alt="Sample Image 12">
+            </div>
+            <div class="image-container">
+                <img src="https://a-z-animals.com/media/animals/images/original/dog5-768x533.jpg" alt="Sample Image 13">
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/3026/6974/files/bulldog-puppy.jpg?v=1533748956" alt="Sample Image 14">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRm2_g2p9EuNKJr5Z6kQbmw33gdWMZlbYv1Q&s" alt="Sample Image 15">
+            </div>
+            <div class="image-container">
+                <img src="https://i.ytimg.com/vi/JnaseAj1kME/maxresdefault.jpg" alt="Sample Image 16">
+            </div>
+            <div class="image-container">
+                <img src="https://c02.purpledshub.com/uploads/sites/41/2018/08/iStock_13967830_XLARGE-90f249d.jpg?w=1029&webp=1" alt="Sample Image 17">
+            </div>
+            <div class="image-container">
+                <img src="https://images.squarespace-cdn.com/content/v1/562cfd50e4b0db46045fb676/1631904568195-W2S4J7WXR5I7V5S87TDG/African+Wild+Animals" alt="Sample Image 18">
+            </div>
+            <!-- Second set of images -->
+            <div class="image-container">
+                <img src="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2018/08/fawn-deer-283005.jpg?h=3abc6a76&itok=xGBhWqeU" alt="Sample Image 19">
+            </div>
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-107486472,width-960,height-1280,resizemode-6.cms" alt="Sample Image 20">
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2P07TSkyAYejccf2BtzpYJUnFlxQrtREgmA&s" alt="Sample Image 21">
+            </div>
+            <div class="image-container">
+                <img src="https://files.worldwildlife.org/wwfcmsprod/images/Elephant_and_Calf_288447_main/story_full_width/3yl7j5q9n4_WEB_288447.jpg" alt="Sample Image 22">
+            </div>
+            <div class="image-container">
+                <img src="https://images.squarespace-cdn.com/content/v1/562cfd50e4b0db46045fb676/1631568560753-8WE5IFV04INZ9BCAK43R/African+Wild+Animals" alt="Sample Image 23">
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_1280.jpg" alt="Sample Image 24">
+            </div>
+        </div>
